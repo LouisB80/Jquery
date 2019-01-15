@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <script src="jquery-3.3.1.min.js"></script>
+  <title>Exercice 5</title>
+</head>
+<body>
+  <form>
+    <div><label for="lastName">Nom : </label><input type="text" name="lastName" id="lastName" /></div>
+    <div><label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" /></div>
+    <div><input type="submit" name="button" value"Envoyer" /></div>
+  </form>
+  <script src="Assets/JS/Exercice5.js" charset="utf-8"></script>
+  <script>
+    $('#firstName').on('blur',bluRay);
+    $('#lastName').on('blur',bluRay);
+    $('#firstName').on('focus',focusOn);
+    $('#lastName').on('focus',focusOn);
+  </script>
+</body>
+</html>
