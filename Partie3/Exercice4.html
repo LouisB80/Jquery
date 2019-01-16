@@ -15,27 +15,30 @@
   <button class="btn" type="button" name="button" id="Btn5">Apparition rectangle</button>
   <script>
   function btn1(){
+    //On stock la valeur actuel du rectangle dans une nouvelle variable.
     var actHeight = $('#rect').height();
+    //tant que la valeur actuelle est inférieure à 100px, on ajoute 10px.
     if (actHeight < 100) {
       var modHeight = actHeight + 10;
       $('#rect').height(modHeight);
-    }
+    };
+    //si la valeur actuelle est égale à 100px, on retourne à la valeur d'origine(10px).
     else if (actHeight = 100) {
       $('#rect').css('height',10);
-    }
-  }
+    };
+  };
   function btn2(){
     $('#rect').css('background-color','green');
-  }
+  };
   function btn3(){
     $('#rect').css('background-color','inherit');
-  }
+  };
   function btn4(){
     $('#rect').hide();
-  }
+  };
   function btn5(){
     $('#rect').show();
-  }
+  };
   $('#Btn1').on('click',btn1);
   $('#Btn2').on('click',btn2);
   $('#Btn3').on('click',btn3);

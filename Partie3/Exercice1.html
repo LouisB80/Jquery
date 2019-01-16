@@ -6,15 +6,19 @@
   <title>Exercice 1</title>
 </head>
 <body>
-  <input type="text" name="Compteur" value="0" id="compt" >
-  <button class="btn btn-primary" type="button" name="button">Clique là</button>
+  <form class="" action="index.html" method="post">
+    <input type="text" name="Compteur" value="0" id="compt" >
+    <button class="btn btn-primary" type="button" name="button">Clique là</button>    
+  </form>
   <script>
-  function increment() {
-      $('#compt').val( function(i, compte) {
-          return ++compte;
-      });
-  }
-  $('.btn').click(increment);
+  $(function(){
+    function increment() {
+        $('#compt').val( function(i, compte) {
+            return ++compte;
+        });
+    };
+    $('.btn').click(increment);
+  });
   </script>
 </body>
 </html>

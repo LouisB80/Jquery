@@ -14,16 +14,14 @@
   var i = 0;
   function compareResult(compare){
     compare= document.querySelector('#Value').value;
+    i++;
     if (compare < result) {
-      i++;
       return alert("C'est plus !");
     }
     else if (compare > result) {
-      i++;
       return alert("C'est moins !");
     }
     else if (compare = result) {
-      i++
       return alert("Tu as gagner en " + i + " coup");
     }
   }
